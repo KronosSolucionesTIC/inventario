@@ -17,11 +17,11 @@ class Conexion
 
         /* Servidor */
         /*
-        $this->host     = "localhost"; //Host
-        $this->user     = "root"; //Usuario Base de datos
-        $this->password = ""; //Contraseña de usuario de base de datos
-        $this->dataBase = "inventario"; //Nombre de la base de datos
-         */
+    $this->host     = "fdb23.awardspace.net"; //
+    $this->user     = "3151581_app"; //Usuario Base de datos
+    $this->password = "Adiegomarin1"; //Contraseña de usuario de base de datos
+    $this->dataBase = "3151581_app"; //Nombre de la base de datos
+     */
 
     }
 

@@ -79,36 +79,6 @@ if ($vermodulo[0]['ver'] == 1) {
                         </li>
                         <?php }?>
                         <?php
-$vermodulo = $usuario->getVermodulo($datosusuario[0]["fkID_cargo"], 4);
-if ($vermodulo[0]['ver'] == 1) {
-    ?>
-                        <!-- Nav Item - Pages Collapse Menu -->
-                        <li class="nav-item">
-                            <a class="nav-link" style="cursor: pointer">
-                                <i class="fas fa-user-check">
-                                </i>
-                                <span>
-                                    Asignación
-                                </span>
-                            </a>
-                        </li>
-                        <?php }?>
-                        <?php
-$vermodulo = $usuario->getVermodulo($datosusuario[0]["fkID_cargo"], 8);
-if ($vermodulo[0]['ver'] == 1) {
-    ?>
-                        <!-- Nav Item - Charts -->
-                        <li class="nav-item">
-                            <a class="nav-link" id="menu_devolucion" style="cursor: pointer">
-                                <i class="fas fa-chart-bar">
-                                </i>
-                                <span>
-                                    Devolución
-                                </span>
-                            </a>
-                        </li>
-                        <?php }?>
-                        <?php
 $vermodulo = $usuario->getVermodulo($datosusuario[0]["fkID_cargo"], 12);
 if ($vermodulo[0]['ver'] == 1) {
     ?>
@@ -137,14 +107,6 @@ if ($vermodulo[0]['ver'] == 1) {
                                     <h6 class="collapse-header">
                                         Personal:
                                     </h6>
-                                    <?php
-$vermodulo = $usuario->getVermodulo($datosusuario[0]["fkID_cargo"], 13);
-if ($vermodulo[0]['ver'] == 1) {
-    ?>
-                                    <a class="collapse-item" href="utilities-color.html" style="cursor: pointer">
-                                        Empleado
-                                    </a>
-                                <?php }?>
                                 <?php
 $vermodulo = $usuario->getVermodulo($datosusuario[0]["fkID_cargo"], 14);
 if ($vermodulo[0]['ver'] == 1) {
