@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-02-2020 a las 23:30:26
--- Versión del servidor: 10.4.8-MariaDB
--- Versión de PHP: 7.1.32
+-- Tiempo de generación: 20-11-2020 a las 20:26:02
+-- Versión del servidor: 10.4.14-MariaDB
+-- Versión de PHP: 7.4.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `inventory`
+-- Base de datos: `inventario`
 --
 
 -- --------------------------------------------------------
@@ -580,7 +579,8 @@ INSERT INTO `proyecto` (`id_proyecto`, `nombre_proyecto`, `estado`) VALUES
 (19, 'PROYECTO 003', 1),
 (20, 'PROYECTO 004', 1),
 (21, 'PROYECTO GOKU', 1),
-(22, 'PROYECTO VENECIA', 1);
+(22, 'PROYECTO VENECIA', 1),
+(23, 'PROYECTO', 1);
 
 -- --------------------------------------------------------
 
@@ -686,7 +686,8 @@ INSERT INTO `territorial_proyecto` (`id_territorial_proyecto`, `fkID_territorial
 (24, 3, 'CUCUNUBA', 22, 1),
 (25, 3, 'CUCNUBA', 22, 1),
 (26, 3, 'TETERE', 22, 1),
-(28, 3, 'YACU', 1, 1);
+(28, 3, 'YACU', 1, 1),
+(29, 12, 'CLLE 100', 23, 1);
 
 -- --------------------------------------------------------
 
@@ -781,7 +782,7 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`id_usuario`, `nombre_usuario`, `pass_usuario`, `fkID_persona`, `token_password`, `password_request`, `estado`) VALUES
-(1, 'prueba', '8cb2237d0679ca88db6464eac60da96345513964', 1, '', 0, 1),
+(1, 'prueba', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 1, '', 0, 1),
 (48, '233243', 'a70276e7a4e7e28a9801165795770446991c489c', 7, '', 0, 1),
 (49, '', 'da39a3ee5e6b4b0d3255bfef95601890afd80709', 8, '', 0, 2),
 (50, '765678', '398a9ddb4e98f2e388895bb1a92838904a91bd9b', 10, '', 0, 1),
@@ -1058,7 +1059,7 @@ ALTER TABLE `procesador`
 -- AUTO_INCREMENT de la tabla `proyecto`
 --
 ALTER TABLE `proyecto`
-  MODIFY `id_proyecto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id_proyecto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT de la tabla `rol`
@@ -1082,7 +1083,7 @@ ALTER TABLE `territorial`
 -- AUTO_INCREMENT de la tabla `territorial_proyecto`
 --
 ALTER TABLE `territorial_proyecto`
-  MODIFY `id_territorial_proyecto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id_territorial_proyecto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT de la tabla `tipo_equipo`
